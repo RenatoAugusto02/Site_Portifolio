@@ -1,0 +1,188 @@
+/* Começo do cabeçalho */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+#cabecalho {
+    background-color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#logo img{
+    max-height: 50px;
+}
+
+/* Estilos para o menu principal */
+.menu_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.menu_principal ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu_principal li{
+    margin: 0 15px;
+    font-size: 1.2em;
+    text-decoration: underline;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: #f9f9f9;
+}
+
+.menu_principal a{
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 5px;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+.menu_principal a:hover{
+    color: #007bff;
+}
+
+/* Estilos para menu redes */
+.redes-sociais {
+    display: flex;
+    gap: 25px; /* Espaço entre os ícones */
+}
+
+.social-icon {
+    color: #555;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    color: #007bff;
+}
+
+/* Estilo barra de pesquisa */
+.busca {
+    display: flex;
+    align-items: center;
+    color: transparent;
+}
+
+.busca form {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.busca input[type="text"] {
+    border: none;
+    padding: 8px 15px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.busca input[type="text"]::placeholder {
+    color: #999;
+}
+
+.busca button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.busca button:hover {
+    background-color: #0056b3;
+}
+
+/* Cores específicas para hover */
+.fa-instagram:hover { color: #E1306C; }
+.fa-whatsapp:hover { color: #25D366; }
+.fa-envelope:hover { color: #EA4335; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .menu_principal{
+        margin-top: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu_principal ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+     #menus {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .menu_principal li{
+        margin-top: 5px 0;
+    }
+
+    .redes-sociais {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .busca{
+        width: 100%;
+    }
+
+    .busca form{
+        width: 100%;
+    }
+
+    .busca input[type="text"] {
+        flex-grow: 1;
+    }
+}
+/* Fim do cebecalho */
+/* Começo da section */
+#corpo{
+    height: 400vh;
+    width: 100%;
+}
+/* Fim da section */
+/* Começo do Rodapé */
+#rodape{
+    height: 24vh;
+    width: 100%;
+    background-color: black;
+}

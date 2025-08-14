@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    background-color: bisque;
+    padding: 10px;
+    /* estruturar o leoiaute com grid */
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    gap: 0px 100px;
+}
+
+#logo{
+    background-color: blue;
+    height: 100px;
+}
+
+#menu_principal{
+    background-color: brown;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Aling Justify */
+    place-items: end end ;
+}
+
+#intens_menu{
+    background-color: coral;
+    height: 40px;
+    width: 60%;
+}
+
+#quem_sou{
+    background-color: aliceblue;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 10px;
+
+}
+
+#informacoes_texto{
+    background-color: cornflowerblue;
+    height: 50%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    gap: 10px 0px;
+
+}
+#foto{
+    background-color: aquamarine;
+    
+}
+
+
+#titulo_informacoes{
+    background-color: burlywood;
+}
+#botao_informacoes{
+    background-color: aqua;
+}
+#redes_sociais_informacoes{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    place-items: center start;
+    gap: 10px;
+
+}
+
+.redes_sociais{
+    background-color: azure;
+    height: 50px;
+    width: 50px;
+}
+
+/* segunda parte */
+#informacoes_2 {
+    background-color: bisque;
+    height: 400px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "image info";
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+#foto_informacoes {
+    background-color: #a52a2a; 
+    height: 300px;
+    width: 300px;
+    grid-area: image;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#titulo {
+    background-color: #8b008b; 
+    height: 50px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    place-items: center start;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: 350px ;
+    top: 75.6% ;
+    z-index: index 10px; 
+    
+   
+}
+
+#texto{
+    background-color: crimson;
+    height: 190px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr;
+    place-items: center;
+    
+}
